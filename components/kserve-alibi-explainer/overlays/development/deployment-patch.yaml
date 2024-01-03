@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: kserve-alibi-explainer
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/kserve/kserve-alibi-explainer@sha256:3de068eba405b709d81243ac0c2058230c72e798e688b0c8b8eedf14789bb277
+        name: container-image
+        resources: {}
+status: {}
