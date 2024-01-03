@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: kserve-controller
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/kserve/kserve-controller@sha256:6f20ac836b8635bac427d00ee5a92e541ccf6994e3e8aed6c1379c629d45b8b2
+        name: container-image
+        resources: {}
+status: {}
