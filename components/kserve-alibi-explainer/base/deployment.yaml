@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: kserve-alibi-explainer
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/kserve/kserve-alibi-explainer@sha256:3de068eba405b709d81243ac0c2058230c72e798e688b0c8b8eedf14789bb277
         imagePullPolicy: Always
         name: container-image
         ports:
